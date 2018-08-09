@@ -8,7 +8,12 @@ class FiguresController < ApplicationController
 		erb :"figures/new"
 	end
 
+	# get "/figures/index" do 
+	# 	erb :"figures/index"
+	# end
+
 	post "/figures" do 
+		
 		@figure = Figure.create(params[:figure])
 		@title = Title.create(params[:title])
 		@landmark = Landmark.create(params[:landmark])

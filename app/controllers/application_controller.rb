@@ -8,8 +8,4 @@ class ApplicationController < Sinatra::Base
 		erb :root
 	end
 
-	get "/figures" do
-
-		erb :"figures/show"
-	end
 end

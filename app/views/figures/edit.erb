@@ -1,1 +1,21 @@
-<h2>Edit the Figure</h2>
+<h1>Edit the Figure</h1>
+
+<h3><form>
+
+	<label> Name: </label> <input value=<%= @figure.name %> id="figure_name" type="text" name="figure[name]" />
+
+	<h4>Titles</h4>
+	
+		<% Title.all.each do |title| %>
+			<ul>
+				<li><%= title.name %><input value=<%= title.id%> type="checkbox" name="figure[title_ids]" ></li>
+			</ul>
+			<% end %>
+
+	<h4>Create New Title: <br>
+	<input id="new_title" type="text" name="title[name]" /></h4>
+	<button>Submit</button>
+
+
+
+</h3></form>
