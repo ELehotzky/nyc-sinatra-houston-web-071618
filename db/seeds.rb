@@ -1,6 +1,7 @@
 Landmark.delete_all
 Figure.delete_all
 Title.delete_all
+FigureTitle.delete_all
 
 landmarks_list = {
     "Madison Square Guarden" => {
